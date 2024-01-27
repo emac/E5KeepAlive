@@ -10,16 +10,16 @@ jobs:
     runs-on: [self-hosted, linux]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: master
           token: ${{ secrets.PAT }}
 
       - name: Setup python and poetry
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.11.7
-          cache: "pip"
+          python-version: '3.11'
+          cache: 'pip'
         
       - uses: Gr1N/setup-poetry@v7
       - run: poetry --version
