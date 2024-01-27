@@ -7,7 +7,7 @@ on:
 
 jobs:
   invoke:
-    runs-on: [self-hosted, linux]
+    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -18,6 +18,7 @@ jobs:
       - name: Setup python and poetry
         uses: actions/setup-python@v2
         with:
+          python-version: 3.9
           cache: 'pip'
         
       - uses: Gr1N/setup-poetry@v7
