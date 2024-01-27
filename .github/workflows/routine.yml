@@ -16,7 +16,7 @@ jobs:
           token: ${{ secrets.PAT }}
 
       - name: Setup python and poetry
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v3
         with:
           python-version: '3.11'
           cache: 'pip'
