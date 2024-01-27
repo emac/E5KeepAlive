@@ -18,7 +18,7 @@ jobs:
       - name: Setup python and poetry
         uses: actions/setup-python@v2
         with:
-          python-version: 2.7.18
+          python-version: 3.9.15
       - uses: Gr1N/setup-poetry@v7
       - run: poetry --version
       
