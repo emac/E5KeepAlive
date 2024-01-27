@@ -18,8 +18,7 @@ jobs:
       - name: Setup python and poetry
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9
-          cache: 'pip'
+          python-version: 3.11.7
         
       - uses: Gr1N/setup-poetry@v7
       - run: poetry --version
